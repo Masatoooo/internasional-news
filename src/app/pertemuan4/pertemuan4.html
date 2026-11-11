@@ -1,0 +1,18 @@
+<hr>
+<h2> Pertemuan 4</h2>
+
+<button (click)="tes2()">Click me< /button> 
+<hr>
+<ul>
+    @for(item of dataNilaiMahasiswa;track $index){
+        <li>{{ item }}</li>   
+    }@empty{
+        <li> Data Not found</li>
+    }
+</ul>
+
+@if(isStatusMenikah) {
+    <p> Anda Sudah Menikah</p>
+} @else {
+    <p> Anda Belum Menikah</p>
+}

@@ -1,0 +1,36 @@
+<h1>
+  {{ judul }}
+</h1>
+
+{{ bilA + bilB }}
+
+<div>
+  <img [src]="photo" alt="Made Subali" />
+</div>
+
+<div>
+  <input type="text" (keyup)="tes($event)" />
+  <button (click)="hitung(20, 10)">Click Me</button>
+</div>
+<div>
+  <input type="text" [(ngModel)]="nama" />
+</div>
+
+<p>{{ nama }}</p>
+
+<div>
+  <select [(ngModel)]="tipe">
+    <option value="">Pilih Tipe</option>
+    <option value="ATK">ATK</option>
+    <option value="Buku">Buku</option>
+    <option value="Sembako">Sembako</option>
+  </select>
+</div>
+
+<p>
+  {{ tipe }}
+</p>
+
+@if (tipe == 'Sembako') {
+  <p>Anda Hebat</p>
+}

@@ -1,0 +1,11 @@
+@if(posts$ | async; as posts){
+    @for(item of posts; track item.id){
+        <p> {{ item.title }}</p>
+        
+        <button matFab extended>
+        <mat-icon>favorite</mat-icon>
+        Basic
+      </button>
+    }
+    
+}
